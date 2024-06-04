@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif, arial;
+}
+
+body {
+  width: 100%;
+  background-color: #022529;
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 15px;
+  margin-bottom: 100px;
+}
+
+.main > .heading {
+  color: aliceblue;
+  font-weight: 800;
+  font-size: 28px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.main > .btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.main > .btns > a > button {
+  width: 140px;
+  height: 40px;
+  background-color: rgb(253, 152, 0);
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid #0ef;
+  box-shadow: 0 0 25px #0ef;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.main > .btns > a > button:active {
+  background-color: #0ef;
+}
+
+.btn1 {
+  animation: slideTop 1.9s ease forwards;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+
+.btn2 {
+  animation: slideTop 2s ease forwards;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+
+.btn3 {
+  animation: slideTop 2.1s ease forwards;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+
+.btn4 {
+  animation: slideTop 2.2s ease forwards;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+
+.main > .btns > a > button:hover {
+  background-color: #0ef;
+  color: #022529;
+  border: 2px solid rgb(253, 152, 0);
+  box-shadow: 0 0 25px rgb(253, 152, 0), 0 0 50px #0ef,
+    0 0 100px rgb(253, 152, 0);
+  transition: all ease-in-out 0.6s;
+}
+
+h3 {
+  color: rgb(146, 224, 72);
+  text-shadow: 0 0 15px rgb(146, 224, 72);
+}
+
+.image > a > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #0ef;
+  box-shadow: 0 0 25px #0ef;
+  cursor: pointer;
+  animation-name: slideRight;
+  animation-duration: 4s;
+  animation-delay: 0.3s;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-200px);
+  }
+
+  100% {
+    transform: translateX(30px);
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translatex(10px);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translatex(0px);
+  }
+}
